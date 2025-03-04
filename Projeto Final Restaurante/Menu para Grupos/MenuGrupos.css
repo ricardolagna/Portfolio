@@ -1,0 +1,141 @@
+/* Variáveis de Cores */
+:root {
+    --color-primary: #0056b3; /* Azul escuro */
+    --color-secondary: #f9f9f9; /* Cinza claro */
+    --color-accent: #ff6f61; /* Cor de destaque */
+    --text-color: #333; /* Cor do texto */
+    --title-color: #000; /* Cor dos títulos em preto */
+    --footer-background: #333; /* Fundo do rodapé */
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    --transition-duration: 0.3s; /* Duração da transição */
+}
+
+/* Estilo Global */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-secondary);
+    color: var(--text-color);
+}
+
+/* Estilos do Header e Footer */
+header, footer {
+    background-color: var(--footer-background);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo do menu de navegação */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    color: var(--color-primary);
+    transform: scale(1.1);
+}
+
+/* Estilo do Main */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo do Menu de Grupo */
+.group-menu {
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.group-menu h1 {
+    color: var(--title-color);
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza os cartões */
+    gap: 20px; /* Espaço entre os cartões */
+}
+
+.menu-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: var(--box-shadow);
+    transition: transform var(--transition-duration), box-shadow var(--transition-duration);
+    width: 100%;
+    max-width: 280px; /* Largura máxima dos cartões */
+    text-align: left;
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+.menu-card h2 {
+    margin: 0;
+    color: var(--title-color); /* Títulos em preto */
+}
+
+.menu-details {
+    display: none; /* Oculta detalhes inicialmente */
+}
+
+.menu-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Botão de mostrar/ocultar menu */
+.toggle-menu-btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.toggle-menu-btn:hover {
+    background-color: #333;
+}
+
+/* Estilos do Rodapé */
+footer ul, .social-media ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li, .social-media ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+footer a, .social-media a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+
