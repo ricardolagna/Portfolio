@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:5501/Restaurante/index.html" class="nav-link">Restaurante</a></li>
+                <li><a href="http://127.0.0.1:5501/Menu/index.html" class="nav-link">Menu</a></li>
+                <li><a href="http://127.0.0.1:5501/Especialidades/index.html" class="nav-link">Especialidades</a></li>
+                <li><a href="http://127.0.0.1:5501/Menu%20para%20Grupos/index.html" class="nav-link">Menu para Grupos</a></li>
+                <li><a href="http://127.0.0.1:5501/Reservas/index.html" class="nav-link">Reservas</a></li>
+            </ul>
+        </nav>
+       
+    </header>
+
+    <main>
+        <section class="welcome">
+            <h1 class="welcome-title">Bem-vindo ao Restaurante Avenida!</h1>
+            <p class="welcome-text">Descubra sabores que encantam em cada prato preparado com dedicação e ingredientes selecionados.</p>
+        </section>
+
+        <!-- Slideshow dos serviços -->
+        <section class="services slideshow-container">
+            <div class="service slide active">
+                <img src="Imagens/ambiente-restaurante.jpg" alt="Ambiente acolhedor com decoração elegante">
+                <h2 class="service-title">Ambiente Acolhedor</h2>
+                <p class="service-text">O nosso restaurante oferece um ambiente acolhedor e sofisticado, onde a decoração elegante e a iluminação suave criam uma atmosfera perfeita para qualquer ocasião.</p>
+            </div>
+            <div class="service slide">
+                <img src="Imagens/Atendimento-Personalizado.jpg" alt="Equipe oferecendo atendimento personalizado a um cliente no restaurante">
+                <h2 class="service-title">Atendimento Personalizado</h2>
+                <p class="service-text">A nossa equipa de profissionais dedicados está sempre pronta para atender às suas necessidades e preferências, garantindo uma experiência única e personalizada.</p>
+            </div>
+            <div class="service slide">
+                <img src="Imagens/eventos-e-reservas.webp" alt="Mesa preparada para evento com pratos sofisticados">
+                <h2 class="service-title">Eventos e Reservas</h2>
+                <p class="service-text">Planeie o seu próximo evento connosco! Oferecemos pacotes personalizados para festas, casamentos e eventos corporativos.</p>
+            </div>
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </section>
+
+        <section class="specialties">
+            <h2 class="specialties-title">As Nossas Especialidades</h2>
+            <p class="specialties-text">Exploramos uma variedade de cozinhas para trazer pratos exclusivos e memoráveis.</p>
+            <ul class="specialties-list">
+                <li>Mariscos - A frescura do oceano no seu prato.</li>
+                <li>Gastronomia Local - Sabores tradicionais com um toque gourmet.</li>
+                <li>Pratos Internacionais - Viagens culinárias que atravessam fronteiras.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p class="footer-text">&copy; 2024 Avenida</p>
+        <ul>
+            <li><a href="politica-privacidade.html" class="footer-link">Política de Privacidade</a></li>
+            <li><a href="aviso-legal.html" class="footer-link">Aviso Legal</a></li>
+            <li><a href="politica-cookies.html" class="footer-link">Política de Cookies</a></li>
+        </ul>
+        <ul class="social-media">
+            <li><a href="https://www.facebook.com" aria-label="Facebook">Facebook</a></li>
+            <li><a href="https://www.twitter.com" aria-label="Twitter">Twitter</a></li>
+            <li><a href="https://www.instagram.com" aria-label="Instagram">Instagram</a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

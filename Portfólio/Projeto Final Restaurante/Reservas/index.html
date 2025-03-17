@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas</title>
+    <link rel="stylesheet" href="Reservas.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:5501/Restaurante/index.html" class="nav-link">Restaurante</a></li>
+                <li><a href="http://127.0.0.1:5501/Menu/index.html" class="nav-link">Menu</a></li>
+                <li><a href="http://127.0.0.1:5501/Especialidades/index.html" class="nav-link">Especialidades</a></li>
+                <li><a href="http://127.0.0.1:5501/Menu%20para%20Grupos/index.html" class="nav-link">Menu para Grupos</a></li>
+                <li><a href="http://127.0.0.1:5501/Reservas/index.html" class="nav-link">Reservas</a></li>
+            </ul>
+        </nav>
+      
+    </header>
+
+    <main>
+        <section>
+            <h1>Reservas e Contato</h1>
+            <p>Entre em contato connosco para fazer uma reserva ou para qualquer dúvida que possa ter. Estamos aqui para ajudar!</p>
+            
+            <div class="reservation-form">
+                <h2>Faça a Sua Reserva</h2>
+                <form id="reservation-form">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Telefone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="date">Data:</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <label for="time">Hora:</label>
+                    <input type="time" id="time" name="time" required>
+
+                    <label for="guests">Número de Pessoas:</label>
+                    <input type="number" id="guests" name="guests" min="1" required>
+
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+
+                    <button type="submit">Enviar Reserva</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Restaurante Avenida</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="Reservas.js"></script>
+</body>
+</html>

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memorial Akira Toriyama</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <audio id="background-music" autoplay loop>
+        <source src="Genkidama.mp3" type="audio/mpeg">
+    </audio>
+
+    <header>
+        <h1>Memorial Akira Toriyama</h1>
+        <nav>
+            <ul>
+                <li><a href="#biography">Biografia</a></li>
+                <li><a href="#top-mangas">Mangás mais Famosos</a></li>
+                <li><a href="#gallery">Galeria de Fotos</a></li>
+                <li><a href="#dedications">Dedicatórias dos Personagens</a></li>
+                <li><a href="#curiosities">Curiosidades</a></li>
+                <li><a href="#tribute">Homenagens de alguns Mangakás</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="section">
+        <p>Nascimento: 5 de abril de 1955, Nagoia, Aichi, Japão</p>
+        <p>Falecimento: 1 de março de 2024, Japão</p>
+        <img src="Imagens/Akira-Goku.jpg" alt="Akira Toriyama" class="main-photo">
+    </section>
+
+    <section id="biography" class="section">
+        <h2>Biografia</h2>
+        <p>Akira Toriyama é um renomado mangaká japonês, famoso por suas obras inovadoras e impactantes. Ele nasceu em 5
+            de abril de 1955, na cidade de Nagoya, Japão. Toriyama é mais conhecido por criar o mangá "Dragon Ball", que
+            se tornou um fenômeno mundial, e "Dr. Slump", que também alcançou grande popularidade.</p>
+        <p>Ao longo de sua carreira, Toriyama recebeu inúmeros prêmios e é amplamente reconhecido como um dos artistas
+            de mangá mais influentes de todos os tempos. Além de seu trabalho nos mangás, ele também contribuiu
+            significativamente para a animação e design de personagens em várias mídias.</p>
+        <p>Em sua vida pessoal, Toriyama é conhecido por ser uma pessoa reservada e gosta de passar seu tempo livre com
+            a família e se dedicando a hobbies como carros e jogos eletrônicos.</p>
+    </section>
+
+    <section id="top-mangas" class="section mangas-section">
+        <h2>Os Mangás Mais Vendidos</h2>
+        <div class="mangas-grid">
+            <div class="manga-item">
+                <img src="Imagens/Dragon-Ball-manga.jpg" alt="Mangá 1">
+                <p><a href="https://pt.wikipedia.org/wiki/Dragon_Ball_(s%C3%A9rie)" target="_blank">Dragon Ball</a></p>
+            </div>
+            <div class="manga-item">
+                <img src="Imagens/Dr-Slump-manga.jpg" alt="Mangá 2">
+                <p><a href="https://pt.wikipedia.org/wiki/Dr._Slump" target="_blank">Dr. Slump</a></p>
+            </div>
+            <div class="manga-item">
+                <img src="Imagens/sand-land-manga.jpg" alt="Mangá 3">
+                <p><a href="https://pt.wikipedia.org/wiki/Sand_Land" target="_blank">Sand Land</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="section">
+        <h2>Galeria de Fotos</h2>
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="Imagens/Dragon-Ball.jpg" alt="Foto 1">
+            </div>
+
+            <div class="slide fade">
+                <img src="Imagens/Akira-Toriyama.jpg" alt="Foto 2">
+            </div>
+
+            <div class="slide fade">
+                <img src="Imagens/Dr-Slump.jpg" alt="Foto 3">
+            </div>
+
+            <div class="slide fade">
+                <img src="Imagens/Akira-Toriyama1.jpg" alt="Foto 4">
+            </div>
+
+            <div class="slide fade">
+                <img src="Imagens/Sand-Land.jpg" alt="Foto 5">
+            </div>
+
+            <div class="slide fade">
+                <img src="Imagens/Akira-Toriyama2.jpg" alt="Foto 6">
+            </div>
+
+            <div class="slide fade">
+                <img src="Imagens/Kajika.jpg" alt="Foto 7">
+            </div>
+
+            <div class="slide fade">
+                <img src="Imagens/Akira-Toriyama3.jpg" alt="Foto 8">
+            </div>
+
+            <div class="slide fade">
+                <img src="Imagens/Cowa!.jpg" alt="Foto 9">
+            </div>
+
+            <div class="slide fade">
+                <img src="Imagens/Akira-Toriyama4.jpg" alt="Foto 10">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div class="dots-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span>
+            <span class="dot" onclick="currentSlide(10)"></span>
+        </div>
+    </section>
+
+    <section id="dedications" class="section">
+        <h2>Dedicatória dos Personagens</h2>
+        <div class="dedicatory-grid">
+
+            <div class="dedicatory-item">
+                <p>"Ensinaste-me que a força vem da nossa superação, que é necessário treinar muito para proteger as
+                    pessoas que amamos. E, por mais difícil que pareça a situação, eu NUNCA devo baixar os
+                    braços."<br>-Goku</p>
+            </div>
+
+            <div class="dedicatory-item">
+                <p>"Deste-me o orgulho de um Príncipe Saiyajin e o caminho para a minha própria redenção quando morri.
+                    Através da rivalidade consegui enfrentar a minha inveja, aprendendo o valor que amigos e familiares
+                    têm."<br>-Vegeta</p>
+            </div>
+
+            <div class="dedicatory-item">
+                <p>"Inventei muita coisa, mas tu invenaste um Universo onde a magia e a ciência coexistem e sem
+                    esforço."<br>-Bulma</p>
+            </div>
+
+            <div class="dedicatory-item">
+                <p>"Viajei através do tempo e mostraste-me que se lutarmos juntos podemos mudar o nosso
+                    futuro."<br>-Trunks</p>
+            </div>
+
+            <div class="dedicatory-item">
+                <p>"Embora tenha nascido como teu inimigo, um demónio temível, mostraste-me que a compaixão e a mudança
+                    são possíveis."<br>-Piccolo</p>
+            </div>
+
+            <div class="dedicatory-item">
+                <p>"Aprendi que ser forte também significa estudar a tua mensagem. Aprendi que defender o planeta dá-te
+                    coragem."<br>-Gohan</p>
+            </div>
+
+            <div class="dedicatory-item">
+                <p>"Deste-me o luxo de ser o tirano definitivo e que mesmo assim o poder mais forte reside em laços de
+                    amigos."<br>-Freezer</p>
+            </div>
+
+            <div class="dedicatory-item">
+                <p>"Como o caos encarnado, sou a prova de que o perigo com a bondade transforma até o ser mais
+                    destrutivo."<br>-Majin Buu</p>
+            </div>
+
+            <div class="dedicatory-item">
+                <p>"Deste-me a chance de realizar os desejos da humanidade e que o sonho mais impossível pode se tornar
+                    realidade."<br>-Shenlong</p>
+            </div>
+
+            <div class="dedicatory-item">
+                <p>"Mostraste-me que um professor está sempre a aprender. Aprendi que posso trabalhar e aproveitar a
+                    vida independentemente da minha idade."<br>-Muten Roshi</p>
+            </div>
+
+            <div class="dedicatory-item">
+                <p>"Embora eu nunca tenha sido o mais forte, deste-me coragem para ser um guerreiro e ter minha
+                    família."<br>-Kuririn</p>
+            </div>
+
+            <div class="dedicatory-item">
+                <p>"Aprendemos que a força de 1 e 1 soma muito mais do que dois."<br>-Trunks & Goten</p>
+            </div>
+
+            <div class="dedicatory-item">
+                <p>"Através de mim exploraste a evolução nas batalhas, aprendi que mesmo a criação mais perfeita tem as
+                    suas falhas."<br>-Cell</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="curiosities" class="section">
+        <h2>Curiosidades</h2>
+        <div class="accordion">
+            <div class="accordion-item">
+                <button class="accordion-button">Antes de Dragon Ball, o mangá de Dr. Slump já era bastante conhecido no
+                    Japão.</button>
+                <div class="accordion-content">
+                    <p>Apesar de ser mais conhecido por Dragon Ball, Akira Toriyama já era bastante famoso em território
+                        japonês devido à sua primeira grande obra chamada Dr. Slump. Esta apresenta uma rapariga robô
+                        chamada Arale, criação do Dr. Sembe Norimaki, que pela sua perfeição é confundida com uma humana
+                        com superpoderes. A comédia que vemos ao longo de Dragon Ball era o foco principal neste mangá,
+                        o que trouxe uma revolução nas histórias produzidas na época.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-button">Jackie Chan foi o responsável pela criação de Dragon Ball por Akira
+                    Toriyama.</button>
+                <div class="accordion-content">
+                    <p>Pode parecer estranho, mas a criação de Dragon Ball deve-se de facto a Jackie Chan, ou mais
+                        especificamente às suas comédias de kung fu. Em diversas entrevistas, Akira Toriyama afirmou que
+                        adorava assistir aos filmes de Jackie Chan e que acabou por se inspirar em várias cenas para
+                        criar Dragon Ball, nomeadamente as primeiras cenas do anime, em que Goku era apenas uma criança,
+                        com traços de humor que tornaram a série tão característica.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-button">Akira Toriyama é o responsável pelo design de personagens dos jogos
+                    Dragon Quest.</button>
+                <div class="accordion-content">
+                    <p>Todos conhecem o estilo particular de desenho de Toriyama, mas poucos sabem que além de Dragon
+                        Ball e Dr. Slump, o autor também participou na criação do jogo Dragon Quest. A franquia nasceu
+                        em 1986 com a colaboração de Yuji Horii e Koichi Nakamura, que tinham o objetivo de criar um RPG
+                        no estilo de Ultima e Wizardy, mas com um ambiente mais amigável e familiar. Para isso, contaram
+                        com o design de personagens de Akira Toriyama, cujas contribuições se mantêm até os dias de
+                        hoje.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-button">O criador de One Piece, Eiichiro Oda, considera Akira Toriyama a sua
+                    maior inspiração.</button>
+                <div class="accordion-content">
+                    <p>One Piece, sendo o maior anime/mangá da atualidade, está a ponto de bater todos os recordes de
+                        vendas e popularidade. O que poucos sabem é que Eiichiro Oda, criador de One Piece, encontrou a
+                        sua maior inspiração para entrar no mundo dos mangás em Dragon Ball, mais especificamente na
+                        história que Toriyama foi desenvolvendo. Oda já referiu várias vezes que Akira Toriyama foi a
+                        sua maior inspiração desde o início da carreira e agradece-lhe constantemente pelo seu trabalho.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-button">Akira Toriyama detém o recorde de maior tiragem inicial de um livro no
+                    Japão.</button>
+                <div class="accordion-content">
+                    <p>Não é surpresa que a franquia Dragon Ball seja um sucesso, mas o que poucos sabem é que em 1995,
+                        Akira Toriyama conseguiu alcançar um recorde de vendas. Mais especificamente, a edição 25 do
+                        mangá de Dragon Ball teve a maior tiragem inicial no Japão até hoje, com 6.53 milhões de cópias
+                        impressas numa primeira edição. A revista Weekly Shonen Jump também teve um aumento
+                        significativo nas vendas durante a publicação de Dragon Ball, alcançando o pico de 6 milhões de
+                        cópias vendidas por semana.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tribute" class="section">
+        <h2>Homenagens de alguns Mangakás</h2>
+        <div class="accordion">
+            <div class="accordion-item">
+                <button class="accordion-button">Eiichiro Oda (Autor de One Piece)</button>
+                <div class="accordion-content">
+                    <p>“É cedo demais! O vazio é muito grande. A tristeza invade-me quando penso que nunca mais o verei.
+                        Admirei-o tanto desde criança, e lembro-me do dia em que ele me chamou pelo nome pela primeira
+                        vez. No caminho para casa, no dia em que ele usou a palavra 'amigo' para mim e para Kishimoto,
+                        recordo-me de ter ficado radiante junto com Kishimoto. Também me recordo da última conversa que
+                        tivemos.
+                        Fui um daqueles que assumiram o bastão desde os dias em que ler mangá era considerado idiotice,
+                        e
+                        ele também criou uma era em que adultos e crianças podiam desfrutar da leitura de mangá. Ele
+                        mostrou-nos o sonho de que o mangá poderia espalhar-se pelo mundo. Era como ver um herói
+                        a avançar.
+                        Para não apenas mangakás, mas também criadores de várias indústrias, a empolgação e a emoção da
+                        época da serialização de Dragon Ball devem ter enraizado-se na sua infância. A sua existência é
+                        como uma grande árvore.
+                        Para os mangakás da nossa geração que estiveram no mesmo palco, as obras de Toriyama tornaram-se
+                        cada vez mais importantes para mim conforme me aproximava desse mesmo palco. Cheguei até a
+                        sentir medo. Mas estou apenas feliz por ver o homem distante novamente. Porque amamo-lo a um
+                        nível profundo.
+                        Com respeito e gratidão pelo mundo criativo que ele deixou para trás. Oro pela paz da sua alma.
+                        Que o céu seja o mundo alegre que ele imaginou.”</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-button">Masashi Kishimoto (Autor de Naruto)</button>
+                <div class="accordion-content">
+                    <p>“Foi tão repentino que, sinceramente, não tenho ideia do que escrever ou como.
+                        Por enquanto, gostaria de ter a liberdade de falar sobre os meus sentimentos e o que gostaria
+                        de contar ao Toriyama-sensei algum dia.
+                        Cresci com o trabalho dele, primeiro nas séries iniciais do ensino básico com Dr. Slump, depois
+                        nos anos seguintes com Dragon Ball. Era simplesmente natural que o trabalho do Sensei
+                        estivesse ao meu lado, como parte da minha vida. Mesmo que algo desagradável acontecesse, Dragon
+                        Ball permitia-me esquecer isso todas as semanas. Isso foi uma graça salvadora para um rapaz do
+                        campo como eu, que não tinha mais nada. E isso porque Dragon Ball simplesmente era muito
+                        divertido!
+                        Eu era um estudante universitário quando o impensável aconteceu: Dragon Ball, que fazia parte
+                        natural da minha vida há tantos anos, de repente chegou ao fim. Assolado por uma tremenda
+                        sensação de perda, eu não sabia mais onde deveria procurar diversão. Mas, ao mesmo tempo, isso
+                        permitiu-me perceber a grandeza do mestre que trouxe Dragon Ball ao mundo.
+
+                        “Eu também quero criar trabalhos como os do Sensei!”
+                        “Eu quero ser como o Sensei!”
+
+                        Pensando nisso, decidi tornar-me um cartunista e, ao seguir os passos do Sensei, essa sensação
+                        de perda também desapareceu. Isso porque fazer quadrinhos era divertido. Perseguir o Sensei
+                        permitiu-me encontrar uma nova fonte de diversão. O Sensei sempre foi o meu guia. O homem que eu
+                        admirava. Ele pode achar isso um incómodo, mas estou grato, quer ele aprecie isso ou não. Para
+                        mim, ele era o deus da minha salvação e um deus do mangá.
+                        A primeira vez que o conheci, fiquei tão nervoso que não consegui dizer nada. Mas como nos
+                        encontrávamos várias vezes como palestrantes do Prémio Tezuka, pude conversar com ele. Nunca
+                        esquecerei o sorriso um pouco tímido, mas não realmente descontente, que ele deu quando Oda-san
+                        e eu, as crianças de Dragon Ball, voltámos a ser crianças aparentemente competindo sobre o
+                        quanto poderíamos falar sobre o nosso prazer com a série.
+                        Agora, acabei de receber a notícia do seu falecimento. Estou assolado por uma tremenda sensação
+                        de perda ainda maior do que quando Dragon Ball terminou… Ainda não sei como lidar com esse
+                        buraco no meu coração. Nem consigo ler o meu amado Dragon Ball. Acho que não fui capaz de
+                        transmitir adequadamente por escrito o que queria dizer-lhe.
+                        Todos ao redor do mundo ainda estavam ansiosos pelo trabalho do Sensei. Se ao menos eu pudesse
+                        realmente realizar um desejo com as Esferas do Dragão… Peço desculpa… Pode ser egoísta, mas
+                        estou de luto, Sensei.
+                        Akira Toriyama-sensei, obrigado por tantos trabalhos agradáveis ao longo destes 45 anos. E
+                        também, obrigado por todo o seu esforço. Você realmente merece o seu descanso.
+                        Quanto aos membros sobreviventes da sua família, que acredito que ainda estão profundamente de
+                        luto pela sua perda, por favor, não se esqueçam de cuidar de si próprios. Rezo para que Akira
+                        Toriyama-sensei descanse em paz.”</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-button">Tite Kubo (Autor de Bleach)</button>
+                <div class="accordion-content">
+                    <p>“Seria estranho escrever um diário sem mencionar isto, então falarei sobre algo sério.
+                        Pessoalmente, não sinto nenhuma solidão ou dor. Não estou a dizer que não haja, mas não há tanto
+                        quanto eu pensava.
+                        É a morte de alguém que leio desde criança, alguém que trabalhou na mesma revista que eu e
+                        alguém por quem fui profundamente influenciado, então parece diferente de quando lido com a
+                        morte em geral, mas é por isso que sinto que ela não existe.
+                        Na verdade, nunca falei sobre isto com ninguém, mas sempre acreditei que criar coisas significa
+                        expandir as suas sensibilidades e expandir a sua vida. Isso porque acredito que enquanto a obra
+                        existir, o autor não estará morto.
+                        E acredito que conseguir acostumar-me adequadamente com esse sentimento é a prova da magnitude
+                        da existência do trabalho que permanece no meu coração. Isso é tudo. A partir do próximo post
+                        continuarei com o meu entusiasmo habitual.”</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-button">Hideaki Sorachi (Autor de GINTAMA)</button>
+                <div class="accordion-content">
+                    <p>“Dragon Ball, ‘Dragon Quest’, ‘Chrono Trigger’, os mundos em que joguei como trabalho de casa e
+                        gastei todos os momentos livres que tinha para dormir, todos nasceram da caneta de Toriyama-san.
+                        Nasci das aparas de borracha que se acumularam depois de admirar a sua caneta e tentar imitá-lo,
+                        mas nunca consegui.
+                        Obrigado, Toriyama-sensei, por me ensinar tanto sobre o mundo do mangá. Graças a si, tornei-me
+                        um homem que ganha a vida com ‘Dragon Ball’, até mais do que você e Toyotaro-sensei.
+                        Não acho que conseguirei preencher esse buraco no meu peito mesmo se comer alguns feijões
+                        mágicos,
+                        mas continuarei a seguir os seus passos e a correr como o Goku, em grandes alturas, coberto com
+                        pó de borracha, carregando uma das Genkidamas que ele espalhou pelo mundo e no meu coração.
+                        Muito obrigado, Toriyama-sensei. Eu sempre vou amá-lo.”
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-button">Yusuke Murata (Desenhista de One-Punch Man)</button>
+                <div class="accordion-content">
+                    <p>“Havia muitas coisas que só poderíamos receber de Toriyama-sensei. Rezo humildemente para que a
+                        sua
+                        alma descanse em paz.”
+                        “Estranhamente, não sinto como se ele tivesse morrido. Provavelmente porque ele era como uma
+                        estrela no céu para mim, mesmo antes de eu estar vivo.”
+                        “Sinto que segui esse caminho não porque queria ser um artista de mangá, mas porque queria ser
+                        como Toriyama-sensei. Eu queria desenhar como o Toriyama-sensei.
+                        Pouco depois do início da série, quando o conheci, ele contou-me alegremente, um recém-chegado
+                        ao mercado, sobre o pano de fundo dos designs de personagens de Dragon Quest. Fiquei
+                        impressionado com a sua personalidade gentil e senti que o Goku e a Arale, que são extremamente
+                        fortes, mas extremamente alegres e não deixam as pessoas tensas, nasceram dessa pessoa.
+                        Aconteceu tão de repente que fiquei atordoado por um dia. Talvez seja tristeza ou vazio, mas
+                        ainda não consigo aceitar o enorme buraco que de repente se abriu.”
+                        “Sou grato pela enorme influência que você deixou sobre mim e, por enquanto, trabalharei
+                        tentando clarear a minha mente. Muito obrigado, Toriyama-sensei.”
+                        Quando comecei a serialização, pensei comigo mesmo: “Se for publicado na Jump, talvez
+                        Toriyama-sensei até leia o que desenhei!”, o que realmente me deu forças.
+                        Isto pode parecer estranho dado o “profissionalismo” pelo qual os professores são valorizados,
+                        mas realmente foi assim.”</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-button">Yuhei Tamura (Autor de Beelzebub)</button>
+                <div class="accordion-content">
+                    <p>“Fiquei surpreso ao saber da morte de Akira Toriyama-sensei.
+                        Ele é definitivamente como uma Estrela Polar para mim, assim como é para muitas pessoas
+                        envolvidas com mangá. Ainda não consigo organizar os meus sentimentos...
+                        Oro pela sua alma do fundo do meu coração.”</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Memorial Akira Toriyama</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

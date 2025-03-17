@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="Menu.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:5501/Restaurante/index.html" class="nav-link">Restaurante</a></li>
+                <li><a href="http://127.0.0.1:5501/Menu/index.html" class="nav-link">Menu</a></li>
+                <li><a href="http://127.0.0.1:5501/Especialidades/index.html" class="nav-link">Especialidades</a></li>
+                <li><a href="http://127.0.0.1:5501/Menu%20para%20Grupos/index.html" class="nav-link">Menu para Grupos</a></li>
+                <li><a href="http://127.0.0.1:5501/Reservas/index.html" class="nav-link">Reservas</a></li>
+            </ul>
+        </nav>
+       
+    </header>
+
+    <main>
+        <section class="filter">
+            <input type="text" id="menuSearch" placeholder="Pesquisar no Menu..." onkeyup="filterMenu()">
+        </section>
+
+        <section class="menu">
+            <h2 class="menu-title">O Nosso Menu</h2>
+
+            <!-- Categoria: Marisco -->
+            <div class="menu-item">
+                <h3 class="menu-item-title">Mariscada Especial <span class="price">€45.00</span></h3>
+                <p class="menu-item-description">Uma combinação de mariscos frescos do dia: lagosta, camarão, mexilhão e amêijoas, servidos com molhos tradicionais portugueses.</p>
+            </div>
+            <div class="menu-item">
+                <h3 class="menu-item-title">Camarão à Guilho <span class="price">€18.00</span></h3>
+                <p class="menu-item-description">Camarões salteados em azeite, alho e piri-piri, servidos com pão torrado.</p>
+            </div>
+            <div class="menu-item">
+                <h3 class="menu-item-title">Arroz de Marisco <span class="price">€22.50</span></h3>
+                <p class="menu-item-description">Arroz cremoso com uma variedade de mariscos frescos, tomate, pimentos e ervas aromáticas.</p>
+            </div>
+            <div class="menu-item">
+                <h3 class="menu-item-title">Cataplana de Marisco <span class="price">€40.00</span></h3>
+                <p class="menu-item-description">Tradicional prato português preparado em cataplana, com mariscos variados, pimentos, cebola, alho e ervas.</p>
+            </div>
+
+            <!-- Categoria: Gastronomia Local Portuguesa -->
+            <div class="menu-item">
+                <h3 class="menu-item-title">Bacalhau à Brás <span class="price">€15.00</span></h3>
+                <p class="menu-item-description">Prato português de bacalhau desfiado, ovos mexidos, batata palha, cebola e salsa.</p>
+            </div>
+            <div class="menu-item">
+                <h3 class="menu-item-title">Arroz de Pato <span class="price">€17.50</span></h3>
+                <p class="menu-item-description">Arroz de pato suculento com chouriço, cenoura e temperos aromáticos, coberto com uma crosta dourada de queijo e bacon.</p>
+            </div>
+            <div class="menu-item">
+                <h3 class="menu-item-title">Caldo Verde <span class="price">€7.50</span></h3>
+                <p class="menu-item-description">Sopa típica portuguesa com couve galega, batata e chouriço, servida com pão de milho.</p>
+            </div>
+            <div class="menu-item">
+                <h3 class="menu-item-title">Polvo à Lagareiro <span class="price">€23.00</span></h3>
+                <p class="menu-item-description">Polvo assado no forno com batatas ao murro, alho e azeite, servido com coentros frescos.</p>
+            </div>
+            <div class="menu-item">
+                <h3 class="menu-item-title">Francesinha <span class="price">€12.00</span></h3>
+                <p class="menu-item-description">Sanduíche típica do Porto com carne, linguiça, queijo derretido e molho especial de tomate e cerveja.</p>
+            </div>
+
+            <!-- Categoria: Pratos Internacionais -->
+            <div class="menu-item">
+                <h3 class="menu-item-title">Risotto de Cogumelos e Trufas <span class="price">€19.00</span></h3>
+                <p class="menu-item-description">Risotto cremoso com cogumelos frescos, manteiga de trufas, queijo parmesão e azeite extra virgem.</p>
+            </div>
+            <div class="menu-item">
+                <h3 class="menu-item-title">Pad Thai de Camarão <span class="price">€16.00</span></h3>
+                <p class="menu-item-description">Prato tailandês de noodles de arroz salteados com camarões, amendoim, brotos de feijão, e molho agridoce de tamarindo.</p>
+            </div>
+            <div class="menu-item">
+                <h3 class="menu-item-title">Sushi Misto <span class="price">€28.00</span></h3>
+                <p class="menu-item-description">Seleção de sushi e sashimi frescos, incluindo nigiris, makis e sashimis variados.</p>
+            </div>
+            <div class="menu-item">
+                <h3 class="menu-item-title">Feijoada Brasileira <span class="price">€14.50</span></h3>
+                <p class="menu-item-description">Feijão preto cozido lentamente com carne de porco, linguiça, acompanhada de arroz branco, farofa, couve refogada e laranja.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Restaurante Avenida</p>
+        <ul>
+            <li><a href="politica-privacidade.html" class="footer-link">Política de Privacidade</a></li>
+            <li><a href="aviso-legal.html" class="footer-link">Aviso Legal</a></li>
+            <li><a href="politica-cookies.html" class="footer-link">Política de Cookies</a></li>
+        </ul>
+        <ul class="social-media">
+            <li><a href="https://www.facebook.com">Facebook</a></li>
+            <li><a href="https://www.twitter.com">Twitter</a></li>
+            <li><a href="https://www.instagram.com">Instagram</a></li>
+        </ul>
+    </footer>
+
+    <script src="Menu.js"></script>
+</body>
+</html>
+

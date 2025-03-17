@@ -1,0 +1,141 @@
+/* Variáveis de Cores */
+:root {
+    --color-primary: #333; /* Azul escuro */
+    --color-secondary: #f9f9f9; /* Cinza claro */
+    --color-accent: #c0c0c0; /* Cinza para detalhes */
+    --color-highlight: #ff6f61; /* Cor de destaque */
+    --text-color: #333; /* Cor do texto */
+    --footer-background: #333; /* Fundo do rodapé */
+    --box-shadow-hover: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra do hover */
+    --transition-duration: 0.3s; /* Duração da transição */
+}
+
+/* Estilo Global */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-secondary);
+    color: var(--text-color);
+}
+
+/* Estilos do Header e Footer */
+header, footer {
+    background-color: var(--footer-background);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo do menu de navegação */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    color: var(--color-primary);
+    transform: scale(1.1);
+}
+
+/* Estilo do Main */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo do Formulário de Reserva */
+.reservation-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.reservation-form h2 {
+    margin-top: 0;
+}
+
+.reservation-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.reservation-form label {
+    margin: 10px 0 5px;
+}
+
+.reservation-form input, 
+.reservation-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--color-accent);
+    border-radius: 5px;
+}
+
+.reservation-form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--color-primary);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color var(--transition-duration);
+}
+
+.reservation-form button:hover {
+    background-color: #333;
+}
+
+/* Estilo da Localização */
+.location {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.location h2 {
+    margin-top: 0;
+}
+
+.map {
+    margin-top: 20px;
+}
+
+.map iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    border: 0;
+}
+
+/* Estilos do Rodapé */
+footer ul, .social-media ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li, .social-media ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+footer a, .social-media a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-media {
+    margin-top: 10px;
+}
