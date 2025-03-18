@@ -9,10 +9,10 @@ Olá! Sou um desenvolvedor Front-End formado pela **Tokio School**, focado em cr
 
 ## 📂 Projetos  
 
-### 🎨 [Homenagem a Akira Toriyama](https://ricardolagna.github.io/portfolio/Projeto%20Final%20Akira/index.html)  
+### 🎨 [Homenagem a Akira Toriyama](https://ricardolagna.github.io/portfolio/akira/index.html)  
 Um site dedicado ao lendário criador de Dragon Ball.  
 
-### 🍽️ [Restaurante Avenida](https://ricardolagna.github.io/portfolio/Projeto%20Final%20Restaurante/index.html)  
+### 🍽️ [Restaurante Avenida](https://ricardolagna.github.io/portfolio/restaurante/index.html)  
 Um menu digital moderno para restaurantes.  
 
 ## 📞 Contacto  
